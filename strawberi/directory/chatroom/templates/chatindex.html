@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strawberi Chatroom</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/strawberi home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles1.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.min.js"></script>
+</head>
+<body style="background-color:#fcfafd;">
+    <header>
+        <img src="https://i.ibb.co/KDHns6B/strawberry-logo.png" alt="strawberi_logo" width="80" height="80">
+        <nav>
+            <ul>
+                <li><a href="https://strawberi.org/home/home.html">Home</a></li>
+                <li><a href="https://strawberi.org/chat/">Chat</a></li>
+                <li><a href="https://strawberi.org/blog/">Blog</a></li>
+                <li><a href="https://strawberi.org/news/news.html">News</a></li>
+                <li><a href="https://strawberi.org/contact/">Contact</a></li>
+                <li><a href="https://strawberi.org/about/">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Username Prompt -->
+        <div id="usernamePrompt">
+            <h1>Who are you?</h1>
+            <input id="usernameInput" type="text" placeholder="Username">
+            <div id="color-picker-container">
+                <label for="colorPicker">Choose text color:</label>
+                <input type="color" id="colorPicker" value="#000000">
+            </div>
+            <button id="loginButton">Enter Chatroom</button>
+        </div>
+        
+        <!-- Chatroom -->
+        <div id="chatroom">
+            <div id="chat-container">
+                <div id="messages"></div>
+                <div id="inputContainer">
+                    <input id="messageInput" type="text" placeholder="Type your message..." autofocus>
+                    <button id="sendButton">Send</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

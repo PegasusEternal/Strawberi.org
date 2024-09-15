@@ -1,0 +1,50 @@
+/* General body styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fcfafd;
+}
+
+/* Header styles */
+header {
+  background-color: #f1f1f1; /* Light background for the header */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333; /* Dark background for the nav bar */
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 20px;
+  color: #fff; /* White text color */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  background-color: #575757; /* Slightly lighter background on hover */
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
