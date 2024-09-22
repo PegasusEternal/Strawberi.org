@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'SecretStrawberi999!'
+app.config['SECRET_KEY'] = 'Thereisnosecretkey'
 socketio = SocketIO(app)
 
 # Store recent messages (adjust MAX_HISTORY as needed)
